@@ -22,6 +22,8 @@ public class MokshaPatam {
         int currentNode = 0;
         int Node = 0;
         Queue<Integer> order = new LinkedList<Integer>();
+        //int snake[] =
+
 
         // BFS is going to remove the first node and then see what are the possible places we can move
         order.add(1);
@@ -30,6 +32,7 @@ public class MokshaPatam {
             // Checking to see if we are at the end of the board
             if (currentNode == boardsize) {
                 // Return the number of rolls
+                return fewestRolls;
             }
             // Going through all the different dice roll possibilities
             for (int i = 1; i <= 6; i++) {

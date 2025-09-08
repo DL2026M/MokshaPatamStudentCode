@@ -1,11 +1,14 @@
 Name: David Lutch
 
-| Date     |    Time     |                                                                                                               Update |
-|:---------|:-----------:|---------------------------------------------------------------------------------------------------------------------:|
-| Sept 2nd |  1-1:30pm   | The problem set was introducted to me in class and I learned about the game of ladders (never knew about it before!) |
-| Sept 3rd | 7:30pm-8pm: |    I read through the problem set and started playing snakes and ladders to actually understand how the game worked. 
-| Sept 3rd | 8pm-8:30pm  |  Played even more games (I won 3 of them somehow!). I now understand the topic that I will be coding soon |
-
+| Date     |      Time      |                                                                                                                                                                                                                                                                                                                                                                                                     Update |
+|:---------|:--------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Sept 2nd |    1-1:30pm    |                                                                                                                                                                                                                                                                                       The problem set was introducted to me in class and I learned about the game of ladders (never knew about it before!) |
+| Sept 3rd |  7:30pm-8pm:   |                                                                                                                                                                                                                                                                                          I read through the problem set and started playing snakes and ladders to actually understand how the game worked. 
+| Sept 3rd |   8pm-8:30pm   |                                                                                                                                                                                                                                                                                                   Played even more games (I won 3 of them somehow!). I now understand the topic that I will be coding soon |
+| Sept 7th | 8:30pm-9:15pm  |                 I started coding! My process involved following the sudo code given to us on the slides and coding any part that I knew how to do. I first created a queue of integers and a couple of int variables to know the current node and keep track of rolls. I then added the first node to the queue and then created a while loop that runs until the queue is empty (no nodes left to visit). |
+| Sept 7th | 9:15pm-10:15pm | During this work time, I started to figure out how to solve the problem, but still didn't know how to code my thoughts and make it abstract. I need to write code that checks to see if a node is either a snake or ladder and the minimum rolls needed to get there. I also need to keep track of each roll made in each solution in order to return the fewest amounts of rolls overall to win (if any). |
+|          |                |                                                                                                                                                                                                                                                                                                                                                                                                            |
+    
 |
 
 
