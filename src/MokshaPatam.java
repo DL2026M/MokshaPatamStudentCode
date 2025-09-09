@@ -18,15 +18,15 @@ public class MokshaPatam {
      *  to reach the final square on a board with the given size, ladders, and snakes.
      */
     public static int fewestMoves(int boardsize, int[][] ladders, int[][] snakes) {
-        int fewestRolls = 0;
         int currentNode = 0;
-        int Node = 0;
+        int node = 0;
         Queue<Integer> order = new LinkedList<Integer>();
-
+        // Maps created here
         int[] snake = new int[boardsize + 1];
         int[] ladder = new int[boardsize + 1];
         int[] rollTracker = new int [boardsize + 1];
-        // WRITE A COMMENT HERE TO EXPLAIN THIS
+        // Instead of going to a snake or ladder and then checking the surrounding nodes, you will automatically go
+        // to the destination that the specific ladder or snake ends at
         for (int i = 0; i < ladders.length; i++) {
             ladder[ladders[i][0]] = ladders[i][1];
         }
@@ -45,23 +45,24 @@ public class MokshaPatam {
             }
             // Going through all the different dice roll possibilities
             for (int i = 1; i <= 6; i++) {
-                // moves to the next node over
-                Node = currentNode + i;
-                // Checks to see if the node isn't a snake
-                if (Node <= boardsize) {
-                    if (snake[Node] != 0) {
-                        Node = snake[Node];
-                    } else if (ladder[Node] != 0) {
-                        Node = ladder[Node];
+                // Moves to the next node over
+                node = currentNode + i;
+                // Checks to see if the node isn't a snake or a ladder
+                if (node <= boardsize) {
+                    if (snake[node] != 0) {
+                        node = snake[node];
+                    } else if (ladder[node] != 0) {
+                        node = ladder[node];
                     }
                     // Checking to see if the node has been visited
-                    if (rollTracker[Node] == 0) {
-                        rollTracker[Node] += rollTracker[currentNode] + 1;
-                        order.add(Node);
+                    if (rollTracker[node] == 0) {
+                        rollTracker[node] += rollTracker[currentNode] + 1;
+                        order.add(node);
                     }
                 }
             }
         }
+        // Returns -1 if there is no solution
         return -1;
     }
 
